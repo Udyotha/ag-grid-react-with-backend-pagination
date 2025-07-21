@@ -11,13 +11,15 @@ const Grid = () => {
   const [rowData, setRowData] = useState([]);
   const [paginationProps, setPaginationProps] = useState({
     limit: 20,
-    skip:0
+    skip:0,
+    totalPages:1
   })
 
   useEffect(() => {
     setPaginationProps({
       limit: 20,
-      skip: 0
+      skip: 0,
+      totalPages:1
     });
   }, []);
 
